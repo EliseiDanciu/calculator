@@ -3,19 +3,15 @@ import Buttons from "./Buttons";
 import Formula from "./Formula";
 import Output from "./Output";
 
-const initialState = { currentVal: "0", formula: "" };
+const initialState = {
+	currentVal: "0",
+	formula: ""
+};
 const checkForDecimal = /[.]+/;
 const checkForOperator = /([/+\-*])/;
 
 export default class Calculator extends Component {
-	constructor(props) {
-		super(props);
-		this.state = initialState;
-	}
-
-	componentDidUpdate() {
-		console.log(this.state);
-	}
+	state = initialState;
 
 	handleNumbers = e => {
 		const { currentVal, formula } = this.state;
@@ -61,7 +57,7 @@ export default class Calculator extends Component {
 		}
 	};
 
-	calculate = e => {
+	calculate = () => {
 		const { formula } = this.state;
 		let expression = formula;
 		const lastElement = expression[expression.length - 1];

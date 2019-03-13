@@ -1,14 +1,11 @@
-import React, { Component } from "react";
+import React from "react";
 
-class Output extends Component {
-	render() {
-		const { currentVal } = this.props;
-		return (
-			<div id="display" className="outputScreen">
-				<p>{currentVal}</p>
-			</div>
-		);
-	}
-}
+const Output = props => {
+	return (
+		<div id="display" className="outputScreen">
+			<p>{props.currentVal}</p>
+		</div>
+	);
+};
 
 export default Output;

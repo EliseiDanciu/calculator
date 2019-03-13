@@ -2,7 +2,7 @@
 	"name": "calculator",
 	"version": "0.1.0",
 	"private": true,
-	"homepage": "https://EliseiDanciu.github.io/reactcalculator",
+	"homepage": "https://EliseiDanciu.github.io/calculator",
 	"dependencies": {
 		"gh-pages": "^2.0.1",
 		"react": "^16.8.3",
